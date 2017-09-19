@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13178.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13156.2"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Start View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="StartViewController" customModule="AR_Invaders" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="LS2-PB-7DP">
+                                <rect key="frame" x="16" y="68" width="343" height="125"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="125" id="K3a-ze-DF9"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="med_invader" translatesAutoresizingMaskIntoConstraints="NO" id="32Z-RH-fFc">
+                                <rect key="frame" x="-1" y="298.5" width="376" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="NLh-PV-egb"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dRm-5E-7Uu">
+                                <rect key="frame" x="0.0" y="376.5" width="375" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="wtP-YT-GkQ"/>
+                                </constraints>
+                                <state key="normal" title="start game">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showARSimulation" destination="BYZ-38-t0r" eventType="touchUpInside" id="o2j-My-dfX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="32Z-RH-fFc" firstAttribute="centerX" secondItem="LS2-PB-7DP" secondAttribute="centerX" id="Cdm-YM-lbd"/>
+                            <constraint firstItem="dRm-5E-7Uu" firstAttribute="top" secondItem="32Z-RH-fFc" secondAttribute="bottom" constant="8" symbolic="YES" id="KvM-Bk-LYx"/>
+                            <constraint firstItem="32Z-RH-fFc" firstAttribute="centerX" secondItem="dRm-5E-7Uu" secondAttribute="centerX" id="M20-wc-uFj"/>
+                            <constraint firstItem="32Z-RH-fFc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QUE-hn-h4P"/>
+                            <constraint firstItem="LS2-PB-7DP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="48" id="aCd-28-Nwl"/>
+                            <constraint firstItem="32Z-RH-fFc" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="bcD-El-Zap"/>
+                            <constraint firstItem="dRm-5E-7Uu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ezV-Rq-aR6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="32Z-RH-fFc" secondAttribute="trailing" id="ien-5P-PAt"/>
+                            <constraint firstItem="LS2-PB-7DP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="nHa-Om-ZZJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="iXD-U2-tl8"/>
+                    <connections>
+                        <outlet property="startButton" destination="dRm-5E-7Uu" id="TLi-6k-3O4"/>
+                        <segue destination="AUM-9s-nJD" kind="show" identifier="showARSimulation" id="SiU-yA-Ro8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="760.79999999999995" y="491.60419790104953"/>
+        </scene>
+        <!--Game View Controller-->
+        <scene sceneID="PFq-pS-XbZ">
+            <objects>
+                <viewController id="AUM-9s-nJD" customClass="GameViewController" customModule="AR_Invaders" customModuleProvider="target" sceneMemberID="viewController">
+                    <arscnView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="xCe-4T-9Le">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </arscnView>
+                    <connections>
+                        <outlet property="sceneView" destination="xCe-4T-9Le" id="k4n-Sd-Ttw"/>
+                        <segue destination="ki5-kP-tH9" kind="unwind" identifier="unwind" unwindAction="unwindFromSimulationWithSegue:" id="6V9-D5-dQ0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5BW-Rd-aI7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="ki5-kP-tH9" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1652" y="492"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo" width="900" height="389"/>
+        <image name="med_invader" width="496" height="371"/>
+    </resources>
+</document>
