@@ -1,14 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13178.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13156.2"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Prototype.ttf">
+            <string>Prototype</string>
+        </array>
+        <array key="good-times-rg.ttf">
+            <string>GoodTimesRg-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Start View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -18,76 +26,149 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="LS2-PB-7DP">
-                                <rect key="frame" x="16" y="68" width="343" height="125"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="125" id="K3a-ze-DF9"/>
-                                </constraints>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="med_invader" translatesAutoresizingMaskIntoConstraints="NO" id="32Z-RH-fFc">
-                                <rect key="frame" x="-1" y="298.5" width="376" height="70"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="NLh-PV-egb"/>
-                                </constraints>
-                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AR Invaders" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="24" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Axd-w6-J4E">
+                                <rect key="frame" x="0.0" y="50" width="375" height="115.5"/>
+                                <fontDescription key="fontDescription" name="GoodTimesRg-Regular" family="Good Times" pointSize="48"/>
+                                <color key="textColor" red="0.0" green="1" blue="0.30980392156862746" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dRm-5E-7Uu">
-                                <rect key="frame" x="0.0" y="376.5" width="375" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="wtP-YT-GkQ"/>
-                                </constraints>
-                                <state key="normal" title="start game">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <rect key="frame" x="169" y="328" width="37" height="32"/>
+                                <fontDescription key="fontDescription" name="Prototype" family="Prototype" pointSize="17"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" red="0.0" green="1" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="showARSimulation" destination="BYZ-38-t0r" eventType="touchUpInside" id="o2j-My-dfX"/>
+                                    <action selector="startPressed" destination="BYZ-38-t0r" eventType="touchDown" id="2oE-l7-h68"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Es3-lW-JYb">
+                                <rect key="frame" x="149" y="285" width="77" height="32"/>
+                                <fontDescription key="fontDescription" name="Prototype" family="Prototype" pointSize="17"/>
+                                <state key="normal" title="Battlefield">
+                                    <color key="titleColor" red="0.0" green="1" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="battlefieldPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="WA5-oy-9hR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8WP-xZ-5Og">
+                                <rect key="frame" x="160" y="317" width="54" height="32"/>
+                                <fontDescription key="fontDescription" name="Prototype" family="Prototype" pointSize="17"/>
+                                <state key="normal" title="Hangar">
+                                    <color key="titleColor" red="0.0" green="1" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="hangarPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="tKa-3p-Bi1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iCM-3b-5Yj">
+                                <rect key="frame" x="172" y="349" width="30" height="32"/>
+                                <fontDescription key="fontDescription" name="Prototype" family="Prototype" pointSize="17"/>
+                                <state key="normal" title="HQ">
+                                    <color key="titleColor" red="0.0" green="1" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="hqPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kmi-72-ZLe"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="32Z-RH-fFc" firstAttribute="centerX" secondItem="LS2-PB-7DP" secondAttribute="centerX" id="Cdm-YM-lbd"/>
-                            <constraint firstItem="dRm-5E-7Uu" firstAttribute="top" secondItem="32Z-RH-fFc" secondAttribute="bottom" constant="8" symbolic="YES" id="KvM-Bk-LYx"/>
-                            <constraint firstItem="32Z-RH-fFc" firstAttribute="centerX" secondItem="dRm-5E-7Uu" secondAttribute="centerX" id="M20-wc-uFj"/>
-                            <constraint firstItem="32Z-RH-fFc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QUE-hn-h4P"/>
-                            <constraint firstItem="LS2-PB-7DP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="48" id="aCd-28-Nwl"/>
-                            <constraint firstItem="32Z-RH-fFc" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="bcD-El-Zap"/>
-                            <constraint firstItem="dRm-5E-7Uu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ezV-Rq-aR6"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="32Z-RH-fFc" secondAttribute="trailing" id="ien-5P-PAt"/>
-                            <constraint firstItem="LS2-PB-7DP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="nHa-Om-ZZJ"/>
+                            <constraint firstItem="8WP-xZ-5Og" firstAttribute="top" secondItem="Es3-lW-JYb" secondAttribute="bottom" id="2Hg-Hh-gzI"/>
+                            <constraint firstItem="Axd-w6-J4E" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="2ls-FV-9Ga"/>
+                            <constraint firstItem="dRm-5E-7Uu" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="719-1T-lQV"/>
+                            <constraint firstItem="Axd-w6-J4E" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="Jtf-Jp-3D4"/>
+                            <constraint firstItem="8WP-xZ-5Og" firstAttribute="centerX" secondItem="dRm-5E-7Uu" secondAttribute="centerX" id="KC7-UW-SOU"/>
+                            <constraint firstItem="Axd-w6-J4E" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="L5v-9M-62s"/>
+                            <constraint firstItem="dRm-5E-7Uu" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Mel-DA-fSA"/>
+                            <constraint firstItem="iCM-3b-5Yj" firstAttribute="top" secondItem="8WP-xZ-5Og" secondAttribute="bottom" id="UPe-Oi-spJ"/>
+                            <constraint firstItem="Es3-lW-JYb" firstAttribute="centerX" secondItem="8WP-xZ-5Og" secondAttribute="centerX" id="ZCC-u0-wZh"/>
+                            <constraint firstItem="8WP-xZ-5Og" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ZhN-pe-1Vo"/>
+                            <constraint firstItem="iCM-3b-5Yj" firstAttribute="centerX" secondItem="dRm-5E-7Uu" secondAttribute="centerX" id="o2o-xg-iyJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="iXD-U2-tl8"/>
                     <connections>
+                        <outlet property="battlefieldButton" destination="Es3-lW-JYb" id="ddz-wl-lGr"/>
+                        <outlet property="hangarButton" destination="8WP-xZ-5Og" id="lZx-XJ-BS3"/>
+                        <outlet property="hqButton" destination="iCM-3b-5Yj" id="GPm-AO-tpw"/>
+                        <outlet property="logo" destination="Axd-w6-J4E" id="5xa-Cd-U83"/>
                         <outlet property="startButton" destination="dRm-5E-7Uu" id="TLi-6k-3O4"/>
-                        <segue destination="AUM-9s-nJD" kind="show" identifier="showARSimulation" id="SiU-yA-Ro8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="760.79999999999995" y="491.60419790104953"/>
         </scene>
-        <!--Game View Controller-->
+        <!--Story View Controller-->
+        <scene sceneID="X77-cN-gPz">
+            <objects>
+                <viewController storyboardIdentifier="StoryViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="HgZ-eL-pOK" customClass="StoryViewController" customModule="AR_Invaders" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8fD-0Z-hLK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sJa-AJ-pgv" customClass="AGTypewriterLabel" customModule="AR_Invaders" customModuleProvider="target">
+                                <rect key="frame" x="16" y="20" width="343" height="647"/>
+                                <fontDescription key="fontDescription" name="Prototype" family="Prototype" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="1" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="sJa-AJ-pgv" firstAttribute="top" secondItem="W4w-oS-a7n" secondAttribute="top" id="ZnM-mQ-NcV"/>
+                            <constraint firstItem="W4w-oS-a7n" firstAttribute="bottom" secondItem="sJa-AJ-pgv" secondAttribute="bottom" id="aLB-TT-G24"/>
+                            <constraint firstItem="sJa-AJ-pgv" firstAttribute="trailing" secondItem="8fD-0Z-hLK" secondAttribute="trailingMargin" id="aql-YB-PX6"/>
+                            <constraint firstItem="sJa-AJ-pgv" firstAttribute="leading" secondItem="8fD-0Z-hLK" secondAttribute="leadingMargin" id="pwI-1l-jaN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="W4w-oS-a7n"/>
+                    </view>
+                    <connections>
+                        <outlet property="storyTypingLabel" destination="sJa-AJ-pgv" id="yy6-iM-1Pd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Ea-EG-k7a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1732" y="178"/>
+        </scene>
+        <!--GameViewController-->
         <scene sceneID="PFq-pS-XbZ">
             <objects>
-                <viewController id="AUM-9s-nJD" customClass="GameViewController" customModule="AR_Invaders" customModuleProvider="target" sceneMemberID="viewController">
-                    <arscnView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="xCe-4T-9Le">
+                <viewController storyboardIdentifier="GameViewController" title="GameViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="AUM-9s-nJD" customClass="GameViewController" customModule="AR_Invaders" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CL3-7e-3dT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    </arscnView>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AKE-10-DG2">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </arscnView>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2u0-8a-T5a">
+                                <rect key="frame" x="176" y="322" width="22" height="22"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="AKE-10-DG2" firstAttribute="bottom" secondItem="UO3-jF-IVN" secondAttribute="bottom" id="ATl-Tc-4HX"/>
+                            <constraint firstItem="AKE-10-DG2" firstAttribute="leading" secondItem="CL3-7e-3dT" secondAttribute="leading" id="K90-UM-BsI"/>
+                            <constraint firstAttribute="trailing" secondItem="AKE-10-DG2" secondAttribute="trailing" id="Naq-NO-kPA"/>
+                            <constraint firstItem="2u0-8a-T5a" firstAttribute="centerX" secondItem="AKE-10-DG2" secondAttribute="centerX" id="qsd-q4-PNf"/>
+                            <constraint firstItem="AKE-10-DG2" firstAttribute="top" secondItem="CL3-7e-3dT" secondAttribute="top" id="vXl-Zv-rBO"/>
+                            <constraint firstItem="2u0-8a-T5a" firstAttribute="centerY" secondItem="AKE-10-DG2" secondAttribute="centerY" id="we6-Gc-oD6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="UO3-jF-IVN"/>
+                    </view>
                     <connections>
-                        <outlet property="sceneView" destination="xCe-4T-9Le" id="k4n-Sd-Ttw"/>
+                        <outlet property="sceneView" destination="AKE-10-DG2" id="WoD-gW-00a"/>
                         <segue destination="ki5-kP-tH9" kind="unwind" identifier="unwind" unwindAction="unwindFromSimulationWithSegue:" id="6V9-D5-dQ0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5BW-Rd-aI7" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="ki5-kP-tH9" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1652" y="492"/>
+            <point key="canvasLocation" x="1732" y="869"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="logo" width="900" height="389"/>
-        <image name="med_invader" width="496" height="371"/>
-    </resources>
 </document>

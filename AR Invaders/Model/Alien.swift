@@ -15,9 +15,9 @@ enum AlienType {
     
     func getImages() -> (front: UIImage, back: UIImage){
         switch self {
-        case .small: return (#imageLiteral(resourceName: "small_invader"), #imageLiteral(resourceName: "small_invader_back"))
+        case .small: return (#imageLiteral(resourceName: "Small Invader"), #imageLiteral(resourceName: "Small Invader back"))
         case .medium: return ( #imageLiteral(resourceName: "med_invader"), #imageLiteral(resourceName: "med_invader_back"))
-        case .large: return (#imageLiteral(resourceName: "large_invader"), #imageLiteral(resourceName: "large_invader_back"))
+        case .large: return (#imageLiteral(resourceName: "Large Invader"), #imageLiteral(resourceName: "Large Invader-1"))
         }
     }
 }

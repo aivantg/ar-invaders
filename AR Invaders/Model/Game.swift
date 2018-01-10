@@ -8,6 +8,7 @@
 
 import Foundation
 
+
 class Game {
     
     var delegate : GameDelegate?
@@ -49,25 +50,22 @@ class Game {
         }
     }
     
+    var lastPowerUp : TimeInterval = 0
+    
     func spawnAlien(numAliens: Int) -> Alien?{ // Decides whether an alien should be spawned
         guard numAliens < maxAliens else { return nil }
         spawnCount += 1
         if(spawnCount == spawnFreq){
             spawnCount = 0
             if(arc4random_uniform(spawnProb) == 0){
-                return Alien(health: 1, power: 1, shotFreq: 60, shotProbHigh: 10, shotProbLow: 2, type: .small)
+                return Alien(health: 1, power: 1, shotFreq: 60, shotProbHigh: 10, shotProbLow: 2, type: .medium)
             }
         }
         return nil
     }
-    
-    
-    
-
 }
 
 protocol GameDelegate {
-
     func scoreDidChange()
     func healthDidChange()
 }

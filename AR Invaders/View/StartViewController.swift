@@ -13,27 +13,62 @@ class StartViewController: UIViewController {
     @IBOutlet var startButton : UIButton!
     var shouldPulse = false
 
+    @IBOutlet weak var logo: UILabel!
+
+    @IBOutlet weak var hqButton: UIButton!
+    @IBOutlet weak var battlefieldButton: UIButton!
+    @IBOutlet weak var hangarButton: UIButton!
+    
+    // MARK - View Controller Lifecycle
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        shouldPulse = true
-        //pulse()
+        introAnimation()
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        startButton.alpha = 0
+        logo.alpha = 0
+        hqButton.alpha = 0
+        battlefieldButton.alpha = 0
+        hangarButton.alpha = 0
     }
     
-    @IBAction func showARSimulation(){
-        print("Button Pressed")
-        performSegue(withIdentifier: "showARSimulation", sender: nil)
+    //MARK - UI Actions
+    @IBAction func startPressed() {
+        UIView.animate(withDuration: 1.0, animations: {
+            self.startButton.alpha = 0
+        }) { (finished) in
+            self.startButton.isEnabled = false
+            Thread.sleep(forTimeInterval: 0.5)
+            UIView.animate(withDuration: 1.0, animations: {
+                self.battlefieldButton.alpha = 1
+                self.hqButton.alpha = 1
+                self.hangarButton.alpha = 1
+            })
+        }
     }
     
-    override func viewDidDisappear(_ animated: Bool) {
-        super.viewDidDisappear(animated)
-        shouldPulse = false
+    @IBAction func battlefieldPressed() {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "StoryViewController")
+        present(vc, animated: true, completion: nil)
     }
-
-    func pulse(){
-        startButton.alpha = 1.0
-        UIView.animate(withDuration: 1.0, delay: 0, options: [.autoreverse, .repeat, .allowUserInteraction], animations: {
-            self.startButton.alpha = 0.0
-        }, completion: nil)
+    @IBAction func hqPressed() {
+    }
+    @IBAction func hangarPressed() {
+    }
+    
+    func introAnimation(){
+        Thread.sleep(forTimeInterval: 0.25)
+        UIView.animate(withDuration: 1.0, animations: {
+            self.logo.alpha = 1
+        }) { (finished) in
+            Thread.sleep(forTimeInterval: 0.25)
+            UIView.animate(withDuration: 1.0, animations: {
+                self.startButton.alpha = 1
+            })
+        }
     }
     
     @IBAction func unwindFromSimulation(segue: UIStoryboardSegue){

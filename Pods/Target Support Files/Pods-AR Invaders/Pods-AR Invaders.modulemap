@@ -1,0 +1,6 @@
+framework module Pods_AR_Invaders {
+  umbrella header "Pods-AR Invaders-umbrella.h"
+
+  export *
+  module * { export * }
+}

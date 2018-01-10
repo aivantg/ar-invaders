@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A355661F2004822900E6EE43 /* StoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A355661E2004822900E6EE43 /* StoryViewController.swift */; };
 		A35F34781F5CD48500957F2A /* Alien.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35F34771F5CD48500957F2A /* Alien.swift */; };
 		A37F0E2A1F341AA4003ED6AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37F0E291F341AA4003ED6AE /* AppDelegate.swift */; };
 		A37F0E2C1F341AA4003ED6AE /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37F0E2B1F341AA4003ED6AE /* StartViewController.swift */; };
 		A37F0E2F1F341AA4003ED6AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A37F0E2D1F341AA4003ED6AE /* Main.storyboard */; };
-		A37F0E311F341AA4003ED6AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A37F0E301F341AA4003ED6AE /* Assets.xcassets */; };
 		A37F0E341F341AA4003ED6AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A37F0E321F341AA4003ED6AE /* LaunchScreen.storyboard */; };
 		A37F0E3C1F378237003ED6AE /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37F0E3B1F378237003ED6AE /* GameViewController.swift */; };
 		A387070D1F4060BB006B67C0 /* ScreenCaptureUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = A387070C1F4060BB006B67C0 /* ScreenCaptureUtility.swift */; };
@@ -20,16 +20,21 @@
 		A38BF9351F3E65DA00B4E58E /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38BF9341F3E65DA00B4E58E /* UIImage+Extension.swift */; };
 		A39611781F37B843003026E6 /* AlienNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39611771F37B843003026E6 /* AlienNode.swift */; };
 		A396117A1F37BB57003026E6 /* SCNVector+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39611791F37BB57003026E6 /* SCNVector+Extension.swift */; };
+		A39AD757200452F400A6475B /* good-times-rg.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A39AD756200452F300A6475B /* good-times-rg.ttf */; };
+		A39AD75B2004598500A6475B /* Prototype.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A39AD75A2004598500A6475B /* Prototype.ttf */; };
 		A39FDCA31F40A1C9002060C1 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39FDCA21F40A1C9002060C1 /* Game.swift */; };
+		A3ACF28720043B7E0027AC58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3ACF28620043B7E0027AC58 /* Assets.xcassets */; };
+		ECD717B680835E9E0C277518 /* Pods_AR_Invaders.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD4BEC5FC3627DC3AE6C8599 /* Pods_AR_Invaders.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0646F9EE95201113E5C0C88D /* Pods-AR Invaders.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AR Invaders.release.xcconfig"; path = "Pods/Target Support Files/Pods-AR Invaders/Pods-AR Invaders.release.xcconfig"; sourceTree = "<group>"; };
+		A355661E2004822900E6EE43 /* StoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryViewController.swift; sourceTree = "<group>"; };
 		A35F34771F5CD48500957F2A /* Alien.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alien.swift; sourceTree = "<group>"; };
 		A37F0E261F341AA4003ED6AE /* AR Invaders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AR Invaders.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A37F0E291F341AA4003ED6AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A37F0E2B1F341AA4003ED6AE /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		A37F0E2E1F341AA4003ED6AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A37F0E301F341AA4003ED6AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A37F0E331F341AA4003ED6AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A37F0E351F341AA4003ED6AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A37F0E3B1F378237003ED6AE /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
@@ -39,7 +44,12 @@
 		A38BF9341F3E65DA00B4E58E /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		A39611771F37B843003026E6 /* AlienNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlienNode.swift; sourceTree = "<group>"; };
 		A39611791F37BB57003026E6 /* SCNVector+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SCNVector+Extension.swift"; sourceTree = "<group>"; };
+		A39AD756200452F300A6475B /* good-times-rg.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "good-times-rg.ttf"; sourceTree = "<group>"; };
+		A39AD75A2004598500A6475B /* Prototype.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Prototype.ttf; sourceTree = "<group>"; };
 		A39FDCA21F40A1C9002060C1 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		A3ACF28620043B7E0027AC58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D11B937756E4E1C368168CE0 /* Pods-AR Invaders.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AR Invaders.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AR Invaders/Pods-AR Invaders.debug.xcconfig"; sourceTree = "<group>"; };
+		FD4BEC5FC3627DC3AE6C8599 /* Pods_AR_Invaders.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AR_Invaders.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,12 +57,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECD717B680835E9E0C277518 /* Pods_AR_Invaders.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8238EFF0FE581FC114748C59 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FD4BEC5FC3627DC3AE6C8599 /* Pods_AR_Invaders.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A35F34731F5CD35500957F2A /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -70,6 +89,7 @@
 				A39611771F37B843003026E6 /* AlienNode.swift */,
 				A37F0E2D1F341AA4003ED6AE /* Main.storyboard */,
 				A37F0E2B1F341AA4003ED6AE /* StartViewController.swift */,
+				A355661E2004822900E6EE43 /* StoryViewController.swift */,
 				A37F0E3B1F378237003ED6AE /* GameViewController.swift */,
 			);
 			path = View;
@@ -78,8 +98,9 @@
 		A35F34761F5CD39900957F2A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A39AD755200452DD00A6475B /* Fonts */,
+				A3ACF28620043B7E0027AC58 /* Assets.xcassets */,
 				A37F0E291F341AA4003ED6AE /* AppDelegate.swift */,
-				A37F0E301F341AA4003ED6AE /* Assets.xcassets */,
 				A37F0E321F341AA4003ED6AE /* LaunchScreen.storyboard */,
 				A37F0E351F341AA4003ED6AE /* Info.plist */,
 				A39611791F37BB57003026E6 /* SCNVector+Extension.swift */,
@@ -94,6 +115,8 @@
 			children = (
 				A37F0E281F341AA4003ED6AE /* AR Invaders */,
 				A37F0E271F341AA4003ED6AE /* Products */,
+				A9AC4BC0BD4EDF112D011F3C /* Pods */,
+				8238EFF0FE581FC114748C59 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -115,6 +138,24 @@
 			path = "AR Invaders";
 			sourceTree = "<group>";
 		};
+		A39AD755200452DD00A6475B /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				A39AD75A2004598500A6475B /* Prototype.ttf */,
+				A39AD756200452F300A6475B /* good-times-rg.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		A9AC4BC0BD4EDF112D011F3C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D11B937756E4E1C368168CE0 /* Pods-AR Invaders.debug.xcconfig */,
+				0646F9EE95201113E5C0C88D /* Pods-AR Invaders.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,9 +163,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A37F0E381F341AA4003ED6AE /* Build configuration list for PBXNativeTarget "AR Invaders" */;
 			buildPhases = (
+				EF8D85F98A2DD77FC5C9DD37 /* [CP] Check Pods Manifest.lock */,
 				A37F0E221F341AA4003ED6AE /* Sources */,
 				A37F0E231F341AA4003ED6AE /* Frameworks */,
 				A37F0E241F341AA4003ED6AE /* Resources */,
+				03640046F67D6153FF2B4760 /* [CP] Embed Pods Frameworks */,
+				494E63F094519768A592CDED /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -174,12 +218,68 @@
 			buildActionMask = 2147483647;
 			files = (
 				A37F0E341F341AA4003ED6AE /* LaunchScreen.storyboard in Resources */,
-				A37F0E311F341AA4003ED6AE /* Assets.xcassets in Resources */,
+				A39AD75B2004598500A6475B /* Prototype.ttf in Resources */,
+				A39AD757200452F400A6475B /* good-times-rg.ttf in Resources */,
+				A3ACF28720043B7E0027AC58 /* Assets.xcassets in Resources */,
 				A37F0E2F1F341AA4003ED6AE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		03640046F67D6153FF2B4760 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AR Invaders/Pods-AR Invaders-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AGTypewriterLabel/AGTypewriterLabel.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AGTypewriterLabel.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AR Invaders/Pods-AR Invaders-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		494E63F094519768A592CDED /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AR Invaders/Pods-AR Invaders-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF8D85F98A2DD77FC5C9DD37 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AR Invaders-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A37F0E221F341AA4003ED6AE /* Sources */ = {
@@ -192,6 +292,7 @@
 				A38BF9311F3929D500B4E58E /* LaserNode.swift in Sources */,
 				A37F0E3C1F378237003ED6AE /* GameViewController.swift in Sources */,
 				A38BF9351F3E65DA00B4E58E /* UIImage+Extension.swift in Sources */,
+				A355661F2004822900E6EE43 /* StoryViewController.swift in Sources */,
 				A37F0E2A1F341AA4003ED6AE /* AppDelegate.swift in Sources */,
 				A39611781F37B843003026E6 /* AlienNode.swift in Sources */,
 				A387070D1F4060BB006B67C0 /* ScreenCaptureUtility.swift in Sources */,
@@ -331,12 +432,13 @@
 		};
 		A37F0E391F341AA4003ED6AE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D11B937756E4E1C368168CE0 /* Pods-AR Invaders.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = WRDKFK258V;
+				DEVELOPMENT_TEAM = JH3YFAV7T3;
 				INFOPLIST_FILE = "AR Invaders/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.aivantgoyal.AR-Invaders";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aivantgoyal.arinvaders;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -345,12 +447,13 @@
 		};
 		A37F0E3A1F341AA4003ED6AE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0646F9EE95201113E5C0C88D /* Pods-AR Invaders.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = WRDKFK258V;
+				DEVELOPMENT_TEAM = JH3YFAV7T3;
 				INFOPLIST_FILE = "AR Invaders/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.aivantgoyal.AR-Invaders";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aivantgoyal.arinvaders;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

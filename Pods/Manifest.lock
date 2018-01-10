@@ -1,0 +1,12 @@
+PODS:
+  - AGTypewriterLabel (0.1.2)
+
+DEPENDENCIES:
+  - AGTypewriterLabel
+
+SPEC CHECKSUMS:
+  AGTypewriterLabel: 599276c22903c26ff99ddff9c7ca145c9f7514c9
+
+PODFILE CHECKSUM: 0c84921cab8d866d403d6fe6926b437b74bbedf6
+
+COCOAPODS: 1.4.0.rc.1

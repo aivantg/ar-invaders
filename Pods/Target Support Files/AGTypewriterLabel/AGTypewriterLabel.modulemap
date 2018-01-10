@@ -1,0 +1,6 @@
+framework module AGTypewriterLabel {
+  umbrella header "AGTypewriterLabel-umbrella.h"
+
+  export *
+  module * { export * }
+}
