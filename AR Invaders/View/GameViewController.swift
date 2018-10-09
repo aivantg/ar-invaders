@@ -38,9 +38,9 @@ class GameViewController: UIViewController, GameDelegate{
         return style
     }()
     
-    lazy var stringAttributes : [NSAttributedStringKey : Any] = [.strokeColor : UIColor.black, .strokeWidth : -4, .foregroundColor: UIColor.white, .font : UIFont.systemFont(ofSize: 20, weight: .bold), .paragraphStyle : paragraphStyle]
+    lazy var stringAttributes : [NSAttributedString.Key : Any] = [.strokeColor : UIColor.black, .strokeWidth : -4, .foregroundColor: UIColor.white, .font : UIFont.systemFont(ofSize: 20, weight: .bold), .paragraphStyle : paragraphStyle]
     
-    lazy var titleAttributes : [NSAttributedStringKey : Any] = [.strokeColor : UIColor.black, .strokeWidth : -4, .foregroundColor: UIColor.white, .font : UIFont.systemFont(ofSize: 50, weight: .bold), .paragraphStyle : paragraphStyle]
+    lazy var titleAttributes : [NSAttributedString.Key : Any] = [.strokeColor : UIColor.black, .strokeWidth : -4, .foregroundColor: UIColor.white, .font : UIFont.systemFont(ofSize: 50, weight: .bold), .paragraphStyle : paragraphStyle]
     
     // Nodes for the scene itself
     var scoreNode : SKLabelNode!
@@ -354,6 +354,8 @@ extension GameViewController : ARSCNViewDelegate{
             case .insufficientFeatures:
                 print("Camera Tracking State Limited Due to Insufficient Features")
                 
+            case .relocalizing:
+                print("Camera Tracking State Limited Due to Relocalizing")
             }
         case .normal:
             print("Camera Tracking State Normal")
